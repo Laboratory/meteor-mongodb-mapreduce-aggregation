@@ -3,10 +3,12 @@ meteor-mongodb-mapreduce-aggregation
 
 Very simple implementation of some of mongodb aggregation framework functions for Meteor.
 
-**meteor-mongodb-mapreduce-aggregation** is a fork of [meteor-mongo-server](https://github.com/zvictor/meteor-mongo-server)
+**meteor-mongodb-mapreduce-aggregation** is a fork of [meteor-mongo-server](https://github.com/monbro/meteor-mongodb-mapreduce-aggregation) based on [meteor-mongo-extensions](https://github.com/jhoxray/meteor-mongo-extensions)
 that do not expose the aggregation framework to the client, being available only on server side.
 
 Unfortunately the original source was not working for me anymore as a plugin and seems to be not maintained. So I created this plugin and bugfixed it.
+
+- Added `out: 'inline' support`
 
 It extends `Collection` with 3 methods so far, **mapReduce**, **distinct** and **aggregate**, so that you can do:
 
@@ -83,7 +85,7 @@ Another [mapReduce](http://docs.mongodb.org/manual/core/map-reduce/) example in 
 
 To install it, run:
 ```bash
-$ meteor add monbro:mongodb-mapreduce-aggregation
+$ meteor add laboratory:mongodb-mapreduce-aggregation
 ```
 
 This package is MIT Licensed. Do whatever you like with it but any responsibility for doing so is your own.
